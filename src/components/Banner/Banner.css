@@ -1,0 +1,152 @@
+.banner {
+  margin-top: 50px;
+}
+.banner-wrap {
+  align-items: center;
+}
+.banner-text {
+  width: 518px;
+}
+.banner-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: slideUp 1.5s ease-in-out forwards;
+}
+.banner-par {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 51px;
+  margin-right: 63px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1.5s forwards ease-in-out;
+}
+.banner-buttons {
+  gap: 29px;
+  align-items: center;
+  animation: slideUp 1.5s ease-in-out forwards;
+}
+.banner-buttons .btn{
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.banner-buttons .btn:hover {
+  transform: scale(1.05);
+}
+.btn-banner-left:hover{
+  transform:scale(1.05);
+}
+.btn-banner-left {
+  padding: 13.5px 41px;
+  animation: slideLeft 1.5s ease-in-out forwards;
+}
+.btn-banner-left:hover{
+background-color: #ff6e00ed
+}
+.img-watch {
+  width: 20px;
+  height: 17px;
+}
+.btn-watch-link {
+  align-items: center;
+  gap: 8.5px;
+  color: #ff9900;
+  animation: slideRight 1.5s ease-in-out forwards;
+}
+
+.watch-par {
+  padding: 0;
+  border-bottom: 1px solid #bb9f75;
+  line-height: 1;
+}
+.banner-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 495px;
+  animation: slideRight 1.5s ease-in-out forwards;
+}
+
+.extra-info {
+  position:absolute;
+  background-color: #ffffffa1;
+  border-radius:25px;
+  padding:8px;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #555;
+  opacity: 0;
+}
+.info-1 {
+  top: 10px;
+  left: 20px;
+  animation: fadeInText 0.8s forwards ease-in-out;
+}
+
+.info-2 {
+  top: -25px;
+  right: 30px;
+  animation: fadeInText 1.6s forwards ease-in-out;
+}
+
+.info-3 {
+  bottom: 20px;
+  left: 50px;
+  animation: fadeInText 2.2s forwards ease-in-out;
+}
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.banner-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

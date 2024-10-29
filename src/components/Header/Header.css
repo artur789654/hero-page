@@ -1,0 +1,44 @@
+.header-wrap {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.nav-wrap{
+    gap: 50px
+}
+.nav-menu{
+  align-items: center;
+}
+.menu{
+    gap: 25px;
+    align-items: center;
+}
+.menu > li > a {
+  color: #2f281e;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.buttons{
+    gap: 14px;
+    margin-right: 14px;
+}
+.btn {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 24px;
+}
+.btn-primary {
+  color: #173a56;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+}
+.btn-default {
+  background-color: #ff9900;
+  color: #ffffff;
+  border: 1px solid #ff9900;
+  border-radius: 4px;
+}
