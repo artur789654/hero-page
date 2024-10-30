@@ -3,6 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.App{
+  display:flex;
+  flex-direction: column;
+  min-height:100vh;
+}
+main{
+  flex-grow: 1;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -18,8 +27,10 @@ ul {
   list-style: none;
 }
 .container {
-  width: 1124px;
+  width: 100%;
+  max-width: 1124px;
   margin: 0 auto;
+  padding:0 15px;
 }
 .flex {
   display: flex;
@@ -29,7 +40,6 @@ h1{
   font-size: 44px;
   line-height: 54px;
   font-weight: 700;
-  margin-bottom: 30px;
   color:  #2F281E;
 
 }

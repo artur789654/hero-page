@@ -1,11 +1,9 @@
 .header-wrap {
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px;
 }
-.nav-wrap{
-    gap: 50px
-}
+
 .nav-menu{
   align-items: center;
 }
@@ -41,4 +39,34 @@
   color: #ffffff;
   border: 1px solid #ff9900;
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .nav-wrap {
+    display: none;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .buttons {
+    margin-right: 0;
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-wrap {
+    flex-direction: column;
+  }
+
+  .logo-wrap img {
+    width: 120px; 
+  }
 }

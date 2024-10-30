@@ -1,5 +1,4 @@
 import "./Banner.css";
-import watch from "../../assets/images/watch.svg";
 import bannder from "../../assets/images/banner.png";
 import { useState } from "react";
 const Banner: React.FC = () => {
@@ -24,10 +23,6 @@ const Banner: React.FC = () => {
                 className="flex btn btn-default btn-banner-left">
                 Click me
               </button>
-              <a href="/" className="flex btn btn-watch-link">
-                <img src={watch} className="img-watch" alt="link to video" />
-                <p className="btn watch-par">Watch the Video</p>
-              </a>
             </div>
           </div>
           <div className="banner-image">
